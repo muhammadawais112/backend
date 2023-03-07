@@ -1,9 +1,9 @@
 var mongoose = require("mongoose");
 
 const setupDB = () => {
-  console.log("process.env.DB", process.env.DB);
+  console.log("process.env.DB",);
   mongoose.connect(
-    process.env.DB,
+  "mongodb+srv://developer:NaF8BFUhgDHpEXse@cluster0.mdlmo.mongodb.net/?retryWrites=true&w=majority",
     function (err) {
       if (err) throw err;
       console.log("successfully connected with database");

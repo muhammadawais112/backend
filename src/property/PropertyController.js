@@ -12,9 +12,9 @@ const cloudinary = require("cloudinary").v2;
 
 
 cloudinary.config({
-    cloud_name: process.env.CLOUD_NAME,
-    api_key: process.env.API_KEY,
-    api_secret: process.env.CLOUD_SECRET_KEY
+    cloud_name:"dl7kvh8y7",
+    api_key:"399115714933138",
+    api_secret:"51MmCXMh-FuJpnGIXmtJGjvNa3Y"
 });
 
 
@@ -58,8 +58,8 @@ const createProperty = async (req, res) => {
         console.log(result);
         const add = PropertyMode({
             title: req.body.title,
-            location: req.body.location,
-            type: req.body.type,
+            category: req.body.category,
+            description: req.body.description,
             size: req.body.size,
             price: req.body.price,
             image: result.url

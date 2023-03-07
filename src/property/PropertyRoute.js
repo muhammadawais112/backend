@@ -1,12 +1,12 @@
 const router = require('express').Router()
 const PropertyController = require("./PropertyController")
 
-router.get('/getProperty', PropertyController.getProperty)
-router.get('/search/:name', PropertyController.searchProperty)
+router.get('/getGroceries', PropertyController.getProperty)
+router.get('/search/:title', PropertyController.searchProperty)
 
-router.post('/createProperty', PropertyController.createProperty)
-router.put('/updateProperty/:id', PropertyController.updateProperty)
-router.delete('/deleteProperty/:id', PropertyController.deleteProperty)
+router.post('/createGroceries', PropertyController.createProperty)
+router.put('/updateGroceries/:id', PropertyController.updateProperty)
+router.delete('/deleteGroceries/:id', PropertyController.deleteProperty)
 
 
 

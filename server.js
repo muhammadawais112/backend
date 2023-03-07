@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
 
 
 
-  res.send("server is working")
+  res.send("server is ab hoja shoro")
 })
 
 
@@ -51,7 +51,7 @@ app.use("/auth", authrouter)
 
 
 
-app.use('/property', propertyRoute)
+app.use('/groceries', propertyRoute)
 
 
 
